@@ -55,14 +55,14 @@
       </div>
       <div class="bottom-header">
         <div class="container">
-          <nav class="navbar-light">
+          <nav class="navbar navbar-light">
             <div class="navbar-brand pull-left">
               <img src="images/logo.svg" alt="Logo">
             </div>
             <button class="navbar-toggler pull-right hidden-md-up" type="button" data-toggle="collapse" data-target="#main-navbar">
               ☰
             </button>
-            <ul class="nav navbar-nav pull-right row navbar-toggleable-sm" id="main-navbar">
+            <ul class="nav navbar-nav pull-right navbar-toggleable-sm" id="main-navbar">
               <li class="nav-item">
                 <a href="#" class="nav-link">Home</a>
               </li>
@@ -79,7 +79,7 @@
                 <a href="#" class="nav-link">Service</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Blog</a>
+                <a href="blog.html" class="nav-link">Blog</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
@@ -109,8 +109,16 @@
             <img src="images/slider-img2.jpg" alt="" class="img-circle">
           </p>
         </li>
-        <li data-target="#carousel-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-generic" data-slide-to="1">
+          <p class="carousel-indicator-hover img-circle">
+            <img src="images/slider-img3.jpg" alt="" class="img-circle">
+          </p>
+        </li>
+        <li data-target="#carousel-generic" data-slide-to="2">
+          <p class="carousel-indicator-hover img-circle">
+            <img src="images/slider-img1.jpg" alt="" class="img-circle">
+          </p>
+        </li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
@@ -156,27 +164,21 @@
         </div>
         <div class="col-xs-12 col-sm-5 startup-categories">
           <div class="media">
-            <a href="#" class="media-left media-img-bg">
-              <img src="images/boost-your-business_icon.svg" alt="Boost your business">
-            </a>
+            <a href="#" class="media-left media-img-bg boost-your-business"></a>
             <div class="media-body">
               <h4 class="media-heading">Boost your Business</h4>
               <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
             </div>
           </div>
           <div class="media">
-            <a href="#" class="media-left media-img-bg">
-              <img src="images/filtering-business-data_icon.svg" alt="Boost your business">
-            </a>
+            <a href="#" class="media-left media-img-bg filtering-business-data"></a>
             <div class="media-body">
               <h4 class="media-heading">Filtering Business data</h4>
               <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
             </div>
           </div>
           <div class="media">
-            <a href="#" class="media-left media-img-bg">
-              <img src="images/business-solutions_icon.svg" alt="Boost your business">
-            </a>
+            <a href="#" class="media-left media-img-bg business-solutions"></a>
             <div class="media-body">
               <h4 class="media-heading">Business Solutions</h4>
               <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
@@ -202,87 +204,381 @@
             </div>
           </blockquote>
         </div>
+        <div class="col-xs-12 col-md-5 carousel-clients">
+          <div id="carousel-clients" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-clients" data-slide-to="0"></li>
+              <li data-target="#carousel-clients" data-slide-to="1"></li>
+              <li data-target="#carousel-clients" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="col-xs-4 img-circle" src="images/post1.jpeg" alt="First slide">
+                <img class="col-xs-4 img-circle" src="images/grafic.png" alt="Second slide">
+                <img class="col-xs-4 img-circle" src="images/post3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="col-xs-4 img-circle" src="images/post1.jpeg" alt="First slide">
+                <img class="col-xs-4 img-circle" src="images/grafic.png" alt="Second slide">
+                <img class="col-xs-4 img-circle" src="images/post3.jpg" alt="Third slide">              </div>
+              <div class="carousel-item">
+                <img class="col-xs-4 img-circle" src="images/post1.jpeg" alt="First slide">
+                <img class="col-xs-4 img-circle" src="images/grafic.png" alt="Second slide">
+                <img class="col-xs-4 img-circle" src="images/post3.jpg" alt="Third slide">            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-xs-12 col-md-5"></div>
+    </div>
     </div>
   </section>
-<section class="home-features">
-  <div class="container">
-    <div class="page-header section-header text-uppercase">
-      <h2>Features</h2>
-      <p>Some of our features</p>
+  <section class="home-features">
+    <div class="container">
+      <div class="page-header section-header text-uppercase">
+        <h2>Features</h2>
+        <p>Some of our features</p>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="media">
+            <a href="#" class="media-left media-img-bg data-entry"></a>
+            <div class="media-body">
+              <h4 class="media-heading">Data Entry</h4>
+              <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="media">
+            <a href="#" class="media-left media-img-bg client-management"></a>
+            <div class="media-body">
+              <h4 class="media-heading">Client management</h4>
+              <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="media">
+            <a href="#" class="media-left media-img-bg better-communication"></a>
+            <div class="media-body">
+              <h4 class="media-heading">Better Communication</h4>
+              <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="media">
+            <a href="#" class="media-left media-img-bg well-analyzing-team"></a>
+            <div class="media-body">
+              <h4 class="media-heading">Well analyzing team</h4>
+              <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="media">
+            <a href="#" class="media-left media-img-bg support"></a>
+            <div class="media-body">
+              <h4 class="media-heading">24 hour support</h4>
+              <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="media">
+            <a href="#" class="media-left media-img-bg keeping-business-data"></a>
+            <div class="media-body">
+              <h4 class="media-heading">Keeping business data</h4>
+              <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-default" type="reset">More features</button>
+      </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="media">
-          <a href="#" class="media-left media-img-bg">
-            <img src="images/data-entry_icon.svg" alt="Boost your business">
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Data Entry</h4>
-            <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+  </section>
+  <section class="home-pricing">
+    <div class="container">
+      <div class="page-header section-header text-uppercase">
+        <h2>Prising</h2>
+        <p>Some of our features</p>
+      </div>
+      <div class="row pricing-list">
+        <div class="col-xs-12- col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-header card-heading text-uppercase">Personal</div>
+            <h4 class="card-title">From <span class="accent-text">$100</span> per month</h4>
+            <div class="card-block">
+              <ul class="card-text">
+                <li class="main-text">Business Support</li>
+                <li class="main-text">Business Analysing</li>
+                <li class="main-text">24 hour support</li>
+              </ul>
+              <button class="btn btn-default">Start now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12- col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-header card-heading recommend text-uppercase">Business</div>
+            <h4 class="card-title">From <span class="accent-text">$200</span> per month</h4>
+            <div class="card-block">
+              <ul class="card-text">
+                <li class="main-text">Business Support</li>
+                <li class="main-text">Business Analysing</li>
+                <li class="main-text">24 hour support</li>
+                <li class="main-text">Client management</li>
+              </ul>
+              <button class="btn btn-default">Start now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12- col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-header card-heading text-uppercase">Gold</div>
+            <h4 class="card-title">From <span class="accent-text">$250</span> per month</h4>
+            <div class="card-block">
+              <ul class="card-text">
+                <li class="main-text">24 hour support</li>
+                <li class="main-text">Client management</li>
+                <li class="main-text">Keeping business data</li>
+              </ul>
+              <button class="btn btn-default">Start now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12- col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-header card-heading text-uppercase">ultimate</div>
+            <h4 class="card-title">From <span class="accent-text">$300</span> per month</h4>
+            <div class="card-block">
+              <ul class="card-text">
+                <li class="main-text">24 hour support</li>
+                <li class="main-text">Client management</li>
+                <li class="main-text">Keeping business data</li>
+                <li class="main-text">Better Communication</li>
+              </ul>
+              <button class="btn btn-default">Start now</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="media">
-          <a href="#" class="media-left media-img-bg">
-            <img src="images/client-management_icon.svg" alt="Boost your business">
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Client management</h4>
-            <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+    </div>
+  </section>
+  <section class="home-team">
+    <div class="container">
+      <div class="page-header section-header text-uppercase">
+        <h2>Team</h2>
+        <p>Meet our team</p>
+      </div>
+      <div class="row team-list">
+        <div class="col-xs-12- col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-block">
+              <a href="#">
+                <img src="images/team1.jpg" alt="">
+              </a>
+            </div>
+            <div class="card-footer team-footer">
+              <h5 class="text-uppercase">Mr. Ramgopalavarma</h5>
+              <p class="accent-text">Data Specialist</p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12- col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-block">
+              <a href="#">
+                <img src="images/team2.jpg" alt="">
+              </a>
+            </div>
+            <div class="card-footer team-footer">
+              <h5 class="text-uppercase">Madhavikutti Menon</h5>
+              <p class="accent-text">Client Support</p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12- col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-block">
+              <a href="#">
+                <img src="images/team3.jpg" alt="">
+              </a>
+            </div>
+            <div class="card-footer team-footer">
+              <h5 class="text-uppercase">Dr.Venkittaraman</h5>
+              <p class="accent-text">Client Management</p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12- col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-block">
+              <a href="#">
+                <img src="images/team4.jpg" alt="">
+              </a>
+            </div>
+            <div class="card-footer team-footer">
+              <h5 class="text-uppercase">George Danial</h5>
+              <p class="accent-text">Communication</p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="media">
-          <a href="#" class="media-left media-img-bg">
-            <img src="images/better-communication_icon.png" alt="Boost your business">
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Better Communication</h4>
-            <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+    </div>
+  </section>
+  <section class="home-proposal">
+    <div class="container">
+      <div class="row center-xs">
+        <div class="proposal-content">
+          <h3 class="proposal-title">One Month <span class="accent-text">Free</span> Service</h3>
+          <p class="proposal-text text-uppercase">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+          <div class="button-group row center-xs">
+            <button class="btn btn-default col-xs-3" type="button">Sign up</button>
+            <button class="btn btn-default col-xs-3 contact-us" type="button">Contact us</button>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="media">
-          <a href="#" class="media-left media-img-bg">
-            <img src="images/well-analyzing-team_icon.png" alt="Boost your business">
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Well analyzing team</h4>
-            <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-          </div>
+    </div>
+  </section>
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row between-xs">
+        <div class="navbar-brand col-md-2">
+          <img src="images/logo.svg" alt="Logo">
+        </div>
+        <div class="flex-col col-md-4">
+          <h5 class="footer-heading">Menu</h5>
+          <ul class="text-uppercase footer-nav row">
+            <li class="col-xs-6">
+              <a href="#" class="footer-text">Home</a>
+            </li>
+            <li class="col-xs-6">
+              <a href="#" class="footer-text">Service</a>
+            </li>
+            <li class="col-xs-6">
+              <a href="#" class="footer-text">About us</a>
+            </li>
+            <li class="col-xs-6">
+              <a href="#" class="footer-text">Blog</a>
+            </li>
+            <li class="col-xs-6">
+              <a href="#" class="footer-text">Features</a>
+            </li>
+            <li class="col-xs-6">
+              <a href="#" class="footer-text">Blog page</a>
+            </li>
+            <li class="col-xs-6">
+              <a href="#" class="footer-text">Portfolio</a>
+            </li>
+            <li class="col-xs-6">
+              <nav class="nav">
+                <a href="#" class="footer-text nav-link">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="footer-text nav-link">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#" class="footer-text nav-link">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </nav>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav footer-contacts col-md-3">
+          <h5 class="footer-heading">Contact</h5>
+          <address class="text-uppercase">
+            <p>Address: <span class="footer-text">Geethanjali street Second flor : 88569</span></p>
+            <p>Phone: <a href="tel:988 9956 222" class="footer-text" >+988 9956 222</a></p>
+            <p>Email: <a href="mailto:info@business.com" class="footer-text" >info@business.com</a></p>
+          </address>
+        </div>
+        <div class="footer-nav col-md-3 footer-newsletter">
+          <h5 class="footer-heading">Newsletter</h5>
+          <p class="footer-text text-uppercase">Sign up your newsletter</p>
+          <form class="input-group">
+            <input type="email" class="form-control text-uppercase" placeholder="Email address">
+            <span class="input-group-addon tags-btn">go</span>
+          </form>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="media">
-          <a href="#" class="media-left media-img-bg">
-            <img src="images/24-hour-support_icon.svg" alt="Boost your business">
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">24 hour support</h4>
-            <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="media">
-          <a href="#" class="media-left media-img-bg">
-            <img src="images/keeping-business-data_icon.png" alt="Boost your business">
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Keeping business data</h4>
-            <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-          </div>
-        </div>
-      </div>
-      <button class="btn btn-default" type="reset">More features</button>
     </div>
   </div>
-</section>
+  <div class="subfooter">
+    <div class="row center-xs">
+      <p class="footer-text text-uppercase">&copy 2015 business Ltd. allright reserved</p>
+    </div>
+  </div>
+</footer>
 
 
 
@@ -304,6 +600,7 @@
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/tether/dist/js/tether.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

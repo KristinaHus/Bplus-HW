@@ -2,22 +2,32 @@
 
 
 .main-head
-  .carousel-indicators
-    li:hover .carousel-indicator-hover
-      display: block
+.carousel-indicators
+  .active
+    background: transparent
+    border: 3px solid white
+    width: 15px
+    height: 15px
+  li
+    border: 3px solid rgba(255, 255, 255, 0.31)
+    position: relative
+    width: 15px
+    height: 15px
+  li:hover .carousel-indicator-hover
+    display: block
 .caption-height
   height: 100%
 
 
 .carousel-indicator-hover
   display: none
-  width: 73px
+  width: 77px
   height: 81px
   border: 3px solid white
   background: #8d8d8d
   position: absolute
-  bottom: 135%
-  left: 39%
+  bottom: 400%
+  left: -365%
   img
     margin: 0
     width: 100%
@@ -61,6 +71,18 @@
     .media
       margin-bottom: 50px
       display: flex
+      .boost-your-business
+        background: #e5eef0 8px 10px url("../images/Boost-your-Business-sprite.png") no-repeat
+        &:hover
+          background: $accent-color -62px 10px url("../images/Boost-your-Business-sprite.png") no-repeat
+      .filtering-business-data
+        background: #e5eef0 8px 7px url("../images/Filtering-Business-data-sprite.png") no-repeat
+        &:hover
+          background: $accent-color -59px 7px url("../images/Filtering-Business-data-sprite.png") no-repeat
+      .business-solutions
+        background: #e5eef0 6px 7px url("../images/Business-Solutions-sprite.png") no-repeat
+        &:hover
+          background: $accent-color -62px 7px url("../images/Business-Solutions-sprite.png") no-repeat
     .media-body
       padding-left: 3%
     h4
@@ -74,6 +96,8 @@
 .clients
   background: #e5eef0
   padding: 7% 0
+  .row
+    margin-left: -0.5rem
   .blockquote
     display: flex
     margin: 0
@@ -96,16 +120,146 @@
     font-family: FontAwesome
     font-size: 60px
     font-weight: 400
+  .carousel-clients
+    img
+      margin: 0
+  .carousel-indicators
+    bottom: -70%
+    li
+      background-color: #b3cacf
+      border: 1px solid #b3cacf
+      box-sizing: content-box
+    .active
+      background: #29c2e1
+      border: 1px solid #29c2e1
 
 .home-features
   margin-top: 7%
+  .container
+    border-bottom: 1px solid $comment-border
+    position: relative
+    &:before
+      content: ''
+      background: url("../images/blue-shape.svg") no-repeat
+      display: block
+      width: 106px
+      height: 79px
+      position: absolute
+      right: 110px
+      bottom: 0
+      z-index: 2
+    &:after
+      background: url("../images/orange-shape.svg") no-repeat
+      display: block
+      width: 136px
+      height: 109px
+      position: absolute
+      right: 0
+      bottom: 0
   .media
     margin-top: 18%
     width: 100%
     display: flex
     overflow: visible
+    .data-entry
+      background: #e5eef0 13px 6px url("../images/Data-Entry-sprite.png") no-repeat
+      &:hover
+        background: $accent-color -62px 6px url("../images/Data-Entry-sprite.png") no-repeat
+    .client-management
+      background: #e5eef0 7px 8px url("../images/Client-management-sprite.png") no-repeat
+      &:hover
+        background: $accent-color -74px 8px url("../images/Client-management-sprite.png") no-repeat
+    .better-communication
+      background: #e5eef0 4px 6px url("../images/Better-Communication-sprite.png") no-repeat
+      &:hover
+        background: $accent-color -79px 6px url("../images/Better-Communication-sprite.png") no-repeat
+    .well-analyzing-team
+      background: #e5eef0 10px 9px url("../images/Well-analyzing-team-sprite.png") no-repeat
+      &:hover
+        background: $accent-color -65px 9px url("../images/Well-analyzing-team-sprite.png") no-repeat
+    .support
+      background: #e5eef0 5px 7px url("../images/24-hour-support-sprite.png") no-repeat
+      &:hover
+        background: $accent-color -74px 5px url("../images/24-hour-support-sprite.png") no-repeat
+    .keeping-business-data
+      background: #e5eef0 6px 6px url("../images/Keeping-business-data-sprite.png") no-repeat
+      &:hover
+        background: $accent-color -78px 6px url("../images/Keeping-business-data-sprite.png") no-repeat
     .media-body
       padding: 0 4%
       width: 100%
   .btn-default
-    margin: 6% auto
+    margin: 6% auto 10% auto
+
+.home-pricing
+  margin: 7% 0
+  .pricing-list
+    margin-top: 4%
+  .card
+    text-align: center
+    border-radius: 0
+    height: 424px
+    position: relative
+    overflow: hidden
+    .btn-default
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+    &:hover
+      box-shadow: 0 0 100px rgba(228, 233, 237, 0.75)
+  .recommend:before
+    content: "RECOMMEND"
+    display: block
+    width: 200px
+    height: 40px
+    transform: rotate(-40deg)
+    background: $accent-color
+    color: white
+    font-size: 12px
+    font-weight: 400
+    line-height: 40px
+    position: absolute
+    left: -60px
+    top: 13px
+  .card-title
+    margin-top: 10px
+    font-size: 18px
+    color: #65686e
+    text-align: center
+    border-bottom: 1px solid #e5e5e5
+    padding: .75rem 1.25rem
+  .card-text
+    margin-bottom: 60px
+    li
+      line-height: 36px
+
+.home-team
+  padding: 7% 0
+  background: #e5eef0
+  .team-list
+    margin-top: 4%
+  .card
+    border-radius: 0
+  .card-block
+    img
+      width: 100%
+      height: 276px
+  .team-footer
+    padding-top: 12%
+    background: transparent
+    font-size: 14px
+
+.home-proposal
+  font-family: "Raleway", sans-serif
+  margin: 7% 0
+  .proposal-title
+    font-size: 30px
+    font-weight: 500
+  .button-group
+    button
+      margin: 0 10px
+    .contact-us
+      background: #f69b37
+
+

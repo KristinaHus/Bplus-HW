@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Karla')
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+@import url('https://fonts.googleapis.com/css?family=Lora:400italic')
+
+@import "reset.sass"
+@import "varible.sass"
+@import "mixin.sass"
+@import "default-classes.sass"
+@import "header.sass"
+@import "sidebar.sass"
+@import "footer.sass"
+@import "home-page.sass"
+
+.subheader
+  position: relative
+  img
+    width: 100%
+  .post-title
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    color: white
+    font-family: Raleway, sans-serif
+    font-weight: 700
+    text-transform: uppercase
+
+.blog-page
+  article
+    overflow: hidden
+    text-overflow: ellipsis
+  .btn-default
+    margin: 5% 0 8% 0
+  .post-preview
+    padding-top: 8%
+    border-bottom: 1px solid $comment-border
+    &:last-child
+      border-bottom: none
+  video, audio
+    width: 100%
+  video
+    background-color: rgba(42, 42, 42, 0.51)
+
+
+.post-page, .blog-page
+  margin-top: 7%
+  .main
+    padding-left: 0
+    img
+      width: 100%
+    .page-header
+      margin: 35px 0
+      h2
+        font-family: Raleway, sans-serif
+        font-weight: 700
+      .header-description
+        margin-top: 15px
+        margin-left: 0
+        font-size: 15px
+        p
+          padding-right: 10px
+          line-height: 15px
+          time, span
+            padding-left: 10px
+        p:nth-child(2)
+          padding-left: 10px
+        p:first-child
+          border-right: 1px solid #23282f
+    .author
+      margin: 8% 0
+      background: #e3eef0
+      img
+        width: 122px
+        height: 122px
+      .jumbotron
+        margin: 0
+        padding: 4rem 0
+        h4
+          margin-bottom: 25px
+        p
+          margin: 0
+.checked-list
+  margin: 7% 13%
+  color: #23282f
+  font-size: 13px
+  li
+    line-height: 36px
+    font-weight: 400
+  li::before
+    content: "\f00c"
+    color: #f7941d
+    font-family: FontAwesome
+    display: inline-block
+    width: 30px
+.comments
+  border-top: 1px solid $comment-border
+  margin: 9% 0 0 0
+  padding: 9% 0
+  .comment, .subcomment
+    padding: 5% 0
+    position:
+    border-bottom: 1px solid $comment-border
+    img
+      width: 68px
+      height: 68px
+  .media-body
+    padding: 0 0 0 3%
+    position: relative
+  .subcomment
+    margin-left: 95px
+
+.leave-comment
+  margin-top: 20px
+  font-size: 13px
+  line-height: 20px
+  form
+    padding-bottom: 10%
+  legend
+    margin-bottom: 30px
+  input, textarea
+    background: $input-fields
+    border: none
+    padding: 15px 25px
+  label
+    padding: 0
+    margin-bottom: 0.8rem
+    display: flex
+  textarea
+    margin-bottom: 2%
+    height: 160px
+    flex-basis: 100%
+  .left
+    padding: 0 .4rem 0 0
+  .right
+    padding: 0 0 0 .4rem
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder
+    color: #23282f
+    font-weight: 400
+  .btn-default
+    padding: 10px 40px
+
+
