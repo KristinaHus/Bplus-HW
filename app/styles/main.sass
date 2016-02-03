@@ -30,6 +30,9 @@
     font-family: Raleway, sans-serif
     font-weight: 700
     text-transform: uppercase
+    h1, h2
+      @media (max-width: 543px)
+        font-size: 58px
 
 .blog-page
   article
@@ -40,18 +43,36 @@
   .post-preview
     padding-top: 8%
     border-bottom: 1px solid $comment-border
-    &:last-child
+    &:first-child
+      padding-top: 0
+    &:nth-last-child(2)
       border-bottom: none
   video, audio
     width: 100%
-  video
+  video::-webkit-media-controls-panel,
+  audio::-webkit-media-controls-panel
     background-color: rgba(42, 42, 42, 0.51)
-
+    border-radius: 0
+  video::-webkit-media-controls-timeline,
+  audio::-webkit-media-controls-timeline
+    background: white
+    height: 6px
+  video::-webkit-media-controls-fullscreen-button,
+  audio::-webkit-media-controls-fullscreen-button
+    display: none
+  .pagination
+    .clear
+      background: transparent
+      color: black
+  nav
+    margin-top: 5%
 
 .post-page, .blog-page
   margin-top: 7%
   .main
     padding-left: 0
+    @media (max-width: 543px)
+      padding-left: 15px
     img
       width: 100%
     .page-header
@@ -78,6 +99,8 @@
       img
         width: 122px
         height: 122px
+        @media (max-width: 543px)
+          border-radius: 0
       .jumbotron
         margin: 0
         padding: 4rem 0
@@ -135,10 +158,16 @@
     margin-bottom: 2%
     height: 160px
     flex-basis: 100%
+    @media (max-width: 543px)
+      margin: 0 .4rem
   .left
     padding: 0 .4rem 0 0
+    @media (max-width: 543px)
+      padding: 0 .4rem
   .right
     padding: 0 0 0 .4rem
+    @media (max-width: 543px)
+      padding: 0 .4rem
   input::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder
     color: #23282f
@@ -146,4 +175,44 @@
   .btn-default
     padding: 10px 40px
 
-
+.about-us
+  .what-we-are
+    margin: 8% 0 0 0
+    @media (max-width: 543px)
+      padding-left: 15px
+    .container
+      padding-bottom: 5%
+      border-bottom: 1px solid $comment-border
+  .text-column
+    column-count: 2
+    column-gap: 65px
+    @media (max-width: 543px)
+      column-count: 1
+  .statistics
+    @media (max-width: 543px)
+      padding-left: 15px
+    .statistics-content
+      margin: 5% 0
+    .number
+      font-size: 60px
+      line-height: 40px
+      color: #23282f
+    .description
+      font-size: 14px
+    .years-in:before,
+    .team-members:before,
+    .finished-projects:before,
+    .certification:before
+      content: " "
+      display: block
+      width: 42px
+      height: 42px
+      margin-right: 40px
+    .years-in:before
+      background: url("../images/years-in-marketing_icon.svg") no-repeat
+    .team-members:before
+      background: url("../images/team-members_icon.svg") no-repeat
+    .finished-projects:before
+      background: url("../images/finished-projects_icons.svg") no-repeat
+    .certification:before
+      background: url("../images/certification_icon.svg") no-repeat

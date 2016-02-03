@@ -3,6 +3,8 @@
 
 .main-head
 .carousel-indicators
+  @media (max-width: 543px)
+    bottom: -5px
   .active
     background: transparent
     border: 3px solid white
@@ -54,10 +56,14 @@
     font-size: 48px
     font-family: Raleway, sans-serif
     font-weight: 700
+    @media (max-width: 543px)
+      font-size: 24px
   p
     font-weight: 400
     font-family: Raleway, sans-serif
     font-size: 14px
+    @media (max-width: 543px)
+      font-size: 11px
 
 .make-startup
   margin-top: 7%
@@ -65,12 +71,19 @@
     .main-text
       margin: 7% 0 10% 0
     .startup-img
-      width: 585px
+      width: 100%
       height: 301px
+      @media (max-width: 543px)
+        width: 100%
+        height: auto
   .startup-categories
+    @media (max-width: 543px)
+      padding: 10% 0
     .media
       margin-bottom: 50px
       display: flex
+      @media (max-width: 543px)
+        padding-left: 3%
       .boost-your-business
         background: #e5eef0 8px 10px url("../images/Boost-your-Business-sprite.png") no-repeat
         &:hover
@@ -85,6 +98,7 @@
           background: $accent-color -62px 7px url("../images/Business-Solutions-sprite.png") no-repeat
     .media-body
       padding-left: 3%
+      flex-basis: 100%
     h4
       color: #23282f
       font-family: "Raleway", sans-serif
@@ -98,15 +112,24 @@
   padding: 7% 0
   .row
     margin-left: -0.5rem
-  .blockquote
-    display: flex
-    margin: 0
-    border-right: 1px solid #d7e3e6
-    .quote
-      text-align: left
-      cite
-        font-style: normal
-        color: $accent-color
+    .carousel-clients
+      @media (max-width: 543px)
+        padding-bottom: 7%
+  .comment-caption
+    position: static
+    min-height: 240px
+    @media (max-width: 543px)
+      min-height: 375px
+    .blockquote
+      display: flex
+      margin: 0
+      border-right: 1px solid #d7e3e6
+      text-shadow: none
+      .quote
+        text-align: left
+        cite
+          font-style: normal
+          color: $accent-color
   .blockquote-text
     color: #55595f
     font-family: "Lora", sans-serif
@@ -125,6 +148,8 @@
       margin: 0
   .carousel-indicators
     bottom: -70%
+    @media (min-width: 543px) and (max-width: 991px)
+      bottom: -35%
     li
       background-color: #b3cacf
       border: 1px solid #b3cacf
@@ -135,6 +160,7 @@
 
 .home-features
   margin-top: 7%
+  overflow: hidden
   .container
     border-bottom: 1px solid $comment-border
     position: relative
@@ -148,6 +174,8 @@
       right: 110px
       bottom: 0
       z-index: 2
+      @media (max-width: 543px)
+        right: 30px
     &:after
       background: url("../images/orange-shape.svg") no-repeat
       display: block
@@ -156,6 +184,8 @@
       position: absolute
       right: 0
       bottom: 0
+      @media (max-width: 543px)
+        right: -50px
   .media
     margin-top: 18%
     width: 100%
@@ -242,9 +272,15 @@
   .card
     border-radius: 0
   .card-block
+    a
+      display: flex
+      justify-content: center
     img
       width: 100%
       height: 276px
+      @media (max-width: 543px)
+        width: auto
+    height: 100%
   .team-footer
     padding-top: 12%
     background: transparent

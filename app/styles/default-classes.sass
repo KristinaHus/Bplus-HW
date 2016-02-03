@@ -12,15 +12,17 @@
     color: $default-color
 
 .tags-btn
-  margin: 5px
-  padding: 0 13px
+  margin: 5px 5px
   background: #29c2e1
-  color: white
   text-transform: uppercase
   font-size: 13px
   line-height: 36px
   border-radius: 0
   transition: all 0.3s ease-in-out
+  flex-grow: 1
+  a
+    padding: 0 4px
+    color: white
   &:hover
     color: $default-color
 
@@ -93,7 +95,7 @@
 .comment-reply
   line-height: 15px
   padding: 0
-  color: $headings-color
+  color: $accent-color
   text-transform: uppercase
   font-size: 15px
   position: absolute
@@ -101,6 +103,8 @@
   right: 0
   &:hover
     color: $default-color
+  @media (max-width: 543px)
+    top: 89%
 
 .comments-quantity
   font-weight: 700
@@ -139,7 +143,22 @@
 .navbar-toggleable-sm
   display: none
 
-
+.pagination
+  li
+    margin: 0 4px
+    width: 42px
+    height: 42px
+    background: $bg-color
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &:hover
+      background: $accent-color
+    a
+      color: white
+  .active
+    background: $accent-color
 
 
 

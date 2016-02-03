@@ -2,6 +2,8 @@
 
 footer
   position: relative
+  width: 100%
+  overflow: hidden
 .footer
   position: relative
   .container
@@ -17,9 +19,20 @@ footer
       position: absolute
       bottom: 0
       left: -245px
+      @media (max-width: 543px)
+        left: -350px
+    @media (max-width: 543px)
+      padding: 5%
+    .menu-footer-heading
+      @media (max-width: 543px)
+        margin-top: 5%
 .footer-nav
   line-height: 35px
   flex-wrap: wrap
+  @media (max-width: 543px)
+    line-height: 23px
+    padding-left: 10px
+    margin-bottom: 5%
   li
     padding: 0
   .nav
@@ -27,10 +40,15 @@ footer
       margin-right: 10px
 .footer-contacts
   address
+    @media (max-width: 543px)
+      line-height: 10px
+      margin: 1rem 0
     p
       color: #3e4146
       font-size: 14px
 .footer-newsletter
+  @media (max-width: 543px)
+    margin-bottom: 15%
   .input-group
     input
       font-size: 12px
@@ -52,3 +70,5 @@ footer
     position: absolute
     right: -185px
     bottom: 0
+    @media (max-width: 543px)
+      right: -310px

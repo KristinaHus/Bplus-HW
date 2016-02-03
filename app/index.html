@@ -54,51 +54,52 @@
         </div>
       </div>
       <div class="bottom-header">
-        <div class="container">
-          <nav class="navbar navbar-light">
+        <div class="container" id="borderOff">
+          <nav class="navbar-light navbar">
+            <button id="menuToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav">
+              ☰
+            </button>
             <div class="navbar-brand pull-left">
               <img src="images/logo.svg" alt="Logo">
             </div>
-            <button class="navbar-toggler pull-right hidden-md-up" type="button" data-toggle="collapse" data-target="#main-navbar">
-              ☰
-            </button>
-            <ul class="nav navbar-nav pull-right navbar-toggleable-sm" id="main-navbar">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">News</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Service</a>
-              </li>
-              <li class="nav-item">
-                <a href="blog.html" class="nav-link">Blog</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                <div class="dropdown-menu" aria-labelledby="Preview">
-                  <a class="dropdown-item" href="#">Dropdown Link 1</a>
-                  <a class="dropdown-item" href="#">Dropdown Link 2</a>
-                  <a class="dropdown-item" href="#">Dropdown Link 3</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-default">contact us</a>
-              </li>
-            </ul>
+            <div class="collapse navbar-toggleable-sm" id="main-nav">
+              <ul class="nav navbar-nav pull-right row">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">News</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                  <div class="dropdown-menu" aria-labelledby="Preview">
+                    <a class="dropdown-item" href="#">Dropdown Link 1</a>
+                    <a class="dropdown-item" href="#">Dropdown Link 2</a>
+                    <a class="dropdown-item" href="#">Dropdown Link 3</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-default">contact us</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
     </div>
   </header>
-
 
 
   <section class="main-header">
@@ -154,7 +155,7 @@
   <section class="make-startup">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-7 startup-main">
+        <div class="col-xs-12 col-sm-7 sol-md-7 startup-main">
           <div class="page-header text-uppercase section-header">
             <h2 class="">Make your startup </h2>
             <p>dream a reality</p>
@@ -162,7 +163,7 @@
           <p class="main-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
           <img src="images/slider-img1.jpg" alt="nature" class="startup-img">
         </div>
-        <div class="col-xs-12 col-sm-5 startup-categories">
+        <div class="col-xs-12 col-sm-5 col-md-5 startup-categories">
           <div class="media">
             <a href="#" class="media-left media-img-bg boost-your-business"></a>
             <div class="media-body">
@@ -197,12 +198,102 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-md-7 row">
-          <blockquote class="blockquote blockquote-reverse">
-            <div class="quote">
-              <p class="blockquote-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries..</p>
-              <footer class="flex-col">by <cite class="text-uppercase">George Danial</cite></footer>
+
+          <div id="carousel-comment" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="carousel-caption comment-caption">
+                  <blockquote class="blockquote blockquote-reverse">
+                    <div class="quote">
+                      <p class="blockquote-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries..</p>
+                      <footer class="flex-col">by <cite class="text-uppercase">George Danial</cite></footer>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption comment-caption">
+                  <blockquote class="blockquote blockquote-reverse">
+                    <div class="quote">
+                      <p class="blockquote-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                      <footer class="flex-col">by <cite class="text-uppercase">George Danial</cite></footer>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption comment-caption">
+                  <blockquote class="blockquote blockquote-reverse">
+                    <div class="quote">
+                      <p class="blockquote-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when </p>
+                      <footer class="flex-col">by <cite class="text-uppercase">George Danial</cite></footer>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption comment-caption">
+                  <blockquote class="blockquote blockquote-reverse">
+                    <div class="quote">
+                      <p class="blockquote-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries..</p>
+                      <footer class="flex-col">by <cite class="text-uppercase">George Danial</cite></footer>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption comment-caption">
+                  <blockquote class="blockquote blockquote-reverse">
+                    <div class="quote">
+                      <p class="blockquote-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <footer class="flex-col">by <cite class="text-uppercase">George Danial</cite></footer>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption comment-caption">
+                  <blockquote class="blockquote blockquote-reverse">
+                    <div class="quote">
+                      <p class="blockquote-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries..</p>
+                      <footer class="flex-col">by <cite class="text-uppercase">George Danial</cite></footer>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption comment-caption">
+                  <blockquote class="blockquote blockquote-reverse">
+                    <div class="quote">
+                      <p class="blockquote-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                      <footer class="flex-col">by <cite class="text-uppercase">George Danial</cite></footer>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption comment-caption">
+                  <blockquote class="blockquote blockquote-reverse">
+                    <div class="quote">
+                      <p class="blockquote-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen </p>
+                      <footer class="flex-col">by <cite class="text-uppercase">George Danial</cite></footer>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption comment-caption">
+                  <blockquote class="blockquote blockquote-reverse">
+                    <div class="quote">
+                      <p class="blockquote-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries..</p>
+                      <footer class="flex-col">by <cite class="text-uppercase">George Danial</cite></footer>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
             </div>
-          </blockquote>
+          </div>
+
         </div>
         <div class="col-xs-12 col-md-5 carousel-clients">
           <div id="carousel-clients" class="carousel slide" data-ride="carousel">
@@ -213,18 +304,19 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img class="col-xs-4 img-circle" src="images/post1.jpeg" alt="First slide">
-                <img class="col-xs-4 img-circle" src="images/grafic.png" alt="Second slide">
-                <img class="col-xs-4 img-circle" src="images/post3.jpg" alt="Third slide">
+                <img class="col-xs-4 img-circle" src="images/post1.jpeg" alt="First slide" data-target="#carousel-comment" data-slide-to="0">
+                <img class="col-xs-4 img-circle" src="images/grafic.png" alt="Second slide" data-target="#carousel-comment" data-slide-to="1">
+                <img class="col-xs-4 img-circle" src="images/post3.jpg" alt="Third slide" data-target="#carousel-comment" data-slide-to="2">
               </div>
               <div class="carousel-item">
-                <img class="col-xs-4 img-circle" src="images/post1.jpeg" alt="First slide">
-                <img class="col-xs-4 img-circle" src="images/grafic.png" alt="Second slide">
-                <img class="col-xs-4 img-circle" src="images/post3.jpg" alt="Third slide">              </div>
+                <img class="col-xs-4 img-circle" src="images/post1.jpeg" alt="First slide" data-target="#carousel-comment" data-slide-to="3">
+                <img class="col-xs-4 img-circle" src="images/grafic.png" alt="Second slide" data-target="#carousel-comment" data-slide-to="4">
+                <img class="col-xs-4 img-circle" src="images/post3.jpg" alt="Third slide" data-target="#carousel-comment" data-slide-to="5">              </div>
               <div class="carousel-item">
-                <img class="col-xs-4 img-circle" src="images/post1.jpeg" alt="First slide">
-                <img class="col-xs-4 img-circle" src="images/grafic.png" alt="Second slide">
-                <img class="col-xs-4 img-circle" src="images/post3.jpg" alt="Third slide">            </div>
+                <img class="col-xs-4 img-circle" src="images/post1.jpeg" alt="First slide" data-target="#carousel-comment" data-slide-to="6">
+                <img class="col-xs-4 img-circle" src="images/grafic.png" alt="Second slide" data-target="#carousel-comment" data-slide-to="7">
+                <img class="col-xs-4 img-circle" src="images/post3.jpg" alt="Third slide" data-target="#carousel-comment" data-slide-to="8">
+              </div>
           </div>
         </div>
       </div>
@@ -303,7 +395,7 @@
         <p>Some of our features</p>
       </div>
       <div class="row pricing-list">
-        <div class="col-xs-12- col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
             <div class="card-header card-heading text-uppercase">Personal</div>
             <h4 class="card-title">From <span class="accent-text">$100</span> per month</h4>
@@ -317,7 +409,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12- col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
             <div class="card-header card-heading recommend text-uppercase">Business</div>
             <h4 class="card-title">From <span class="accent-text">$200</span> per month</h4>
@@ -332,7 +424,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12- col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
             <div class="card-header card-heading text-uppercase">Gold</div>
             <h4 class="card-title">From <span class="accent-text">$250</span> per month</h4>
@@ -346,7 +438,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12- col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
             <div class="card-header card-heading text-uppercase">ultimate</div>
             <h4 class="card-title">From <span class="accent-text">$300</span> per month</h4>
@@ -371,7 +463,7 @@
         <p>Meet our team</p>
       </div>
       <div class="row team-list">
-        <div class="col-xs-12- col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
             <div class="card-block">
               <a href="#">
@@ -401,7 +493,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12- col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
             <div class="card-block">
               <a href="#">
@@ -431,7 +523,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12- col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
             <div class="card-block">
               <a href="#">
@@ -461,7 +553,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12- col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
             <div class="card-block">
               <a href="#">
@@ -501,90 +593,85 @@
           <h3 class="proposal-title">One Month <span class="accent-text">Free</span> Service</h3>
           <p class="proposal-text text-uppercase">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
           <div class="button-group row center-xs">
-            <button class="btn btn-default col-xs-3" type="button">Sign up</button>
-            <button class="btn btn-default col-xs-3 contact-us" type="button">Contact us</button>
+            <button class="btn btn-default col-xs-4 col-sm-3" type="button">Sign up</button>
+            <button class="btn btn-default col-xs-4 col-sm-3 contact-us" type="button">Contact us</button>
           </div>
         </div>
       </div>
     </div>
   </section>
-<footer>
-  <div class="footer">
-    <div class="container">
-      <div class="row between-xs">
-        <div class="navbar-brand col-md-2">
-          <img src="images/logo.svg" alt="Logo">
-        </div>
-        <div class="flex-col col-md-4">
-          <h5 class="footer-heading">Menu</h5>
-          <ul class="text-uppercase footer-nav row">
-            <li class="col-xs-6">
-              <a href="#" class="footer-text">Home</a>
-            </li>
-            <li class="col-xs-6">
-              <a href="#" class="footer-text">Service</a>
-            </li>
-            <li class="col-xs-6">
-              <a href="#" class="footer-text">About us</a>
-            </li>
-            <li class="col-xs-6">
-              <a href="#" class="footer-text">Blog</a>
-            </li>
-            <li class="col-xs-6">
-              <a href="#" class="footer-text">Features</a>
-            </li>
-            <li class="col-xs-6">
-              <a href="#" class="footer-text">Blog page</a>
-            </li>
-            <li class="col-xs-6">
-              <a href="#" class="footer-text">Portfolio</a>
-            </li>
-            <li class="col-xs-6">
-              <nav class="nav">
-                <a href="#" class="footer-text nav-link">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#" class="footer-text nav-link">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#" class="footer-text nav-link">
-                  <i class="fa fa-google-plus"></i>
-                </a>
-              </nav>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-nav footer-contacts col-md-3">
-          <h5 class="footer-heading">Contact</h5>
-          <address class="text-uppercase">
-            <p>Address: <span class="footer-text">Geethanjali street Second flor : 88569</span></p>
-            <p>Phone: <a href="tel:988 9956 222" class="footer-text" >+988 9956 222</a></p>
-            <p>Email: <a href="mailto:info@business.com" class="footer-text" >info@business.com</a></p>
-          </address>
-        </div>
-        <div class="footer-nav col-md-3 footer-newsletter">
-          <h5 class="footer-heading">Newsletter</h5>
-          <p class="footer-text text-uppercase">Sign up your newsletter</p>
-          <form class="input-group">
-            <input type="email" class="form-control text-uppercase" placeholder="Email address">
-            <span class="input-group-addon tags-btn">go</span>
-          </form>
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row between-xs">
+          <div class="navbar-brand col-md-2">
+            <img src="images/logo.svg" alt="Logo">
+          </div>
+          <div class="flex-col col-md-4">
+            <h5 class="footer-heading menu-footer-heading">Menu</h5>
+            <ul class="text-uppercase footer-nav row">
+              <li class="col-xs-6">
+                <a href="#" class="footer-text">Home</a>
+              </li>
+              <li class="col-xs-6">
+                <a href="#" class="footer-text">Service</a>
+              </li>
+              <li class="col-xs-6">
+                <a href="#" class="footer-text">About us</a>
+              </li>
+              <li class="col-xs-6">
+                <a href="#" class="footer-text">Blog</a>
+              </li>
+              <li class="col-xs-6">
+                <a href="#" class="footer-text">Features</a>
+              </li>
+              <li class="col-xs-6">
+                <a href="#" class="footer-text">Blog page</a>
+              </li>
+              <li class="col-xs-6">
+                <a href="#" class="footer-text">Portfolio</a>
+              </li>
+              <li class="col-xs-6">
+                <nav class="nav">
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#" class="footer-text nav-link">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </nav>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav footer-contacts col-md-3">
+            <h5 class="footer-heading">Contact</h5>
+            <address class="text-uppercase">
+              <p>Address: <span class="footer-text">Geethanjali street Second flor : 88569</span></p>
+              <p>Phone: <a href="tel:988 9956 222" class="footer-text" >+988 9956 222</a></p>
+              <p>Email: <a href="mailto:info@business.com" class="footer-text" >info@business.com</a></p>
+            </address>
+          </div>
+          <div class="footer-nav col-md-3 footer-newsletter">
+            <h5 class="footer-heading">Newsletter</h5>
+            <p class="footer-text text-uppercase">Sign up your newsletter</p>
+            <form class="input-group">
+              <input type="email" class="form-control text-uppercase" placeholder="Email address">
+              <span class="input-group-addon tags-btn">go</span>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="subfooter">
-    <div class="row center-xs">
-      <p class="footer-text text-uppercase">&copy 2015 business Ltd. allright reserved</p>
+    <div class="subfooter">
+      <div class="row center-xs">
+        <p class="footer-text text-uppercase">&copy 2015 business Ltd. allright reserved</p>
+      </div>
     </div>
-  </div>
-</footer>
-
-
-
-
-
-
+  </footer>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

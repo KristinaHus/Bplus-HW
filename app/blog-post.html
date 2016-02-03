@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -56,10 +59,10 @@
               </div>
               <ul class="nav navbar-nav pull-right row">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Home</a>
+                  <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">About Us</a>
+                  <a href="about-us.html" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">News</a>
@@ -71,7 +74,7 @@
                   <a href="#" class="nav-link">Service</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Blog</a>
+                  <a href="blog.html" class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
@@ -101,7 +104,7 @@
       <div class="container">
         <div class="row">
           <section class="main col-xs-12 col-sm-9">
-            <img src="images/hero_dog_482206371.jpg" alt="hero dog" width="828" height="334">
+            <img src="images/hero_dog_482206371.jpg" alt="hero dog">
             <div class="page-header">
               <h2 class="h3 text-uppercase">Blog Heading</h2>
               <div class="header-description row text-uppercase">
@@ -120,13 +123,13 @@
               <p class="main-text">All the Lorem Ipsum generators. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
             </article>
             <div class="media author row">
-              <div class="col-xs-12 col-sm-3 row center-xs middle-xs">
+              <div class="col-xs-12 col-sm-3 row start-xs middle-xs">
                 <img src="images/IMG_9590.jpg" alt="logo" class="img-circle">
               </div>
               <div class="media-body col-sx-12 col-sm-9">
                 <div class="jumbotron">
                   <h4 class="media-heading heading-text text-uppercase">Author: <span class="secondary-heading-text">Madona ignetious</span></h4>
-                  <p class="main-text">Ut wisi enim ad minim veniam, euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+                  <p class="main-text">Ut wisi enim ad minim veniam, euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.Ut wisi enim ad minim veniam, euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
                 </div>
               </div>
             </div>
@@ -141,7 +144,7 @@
                     <p>Maxwell</p>
                     <time class="border-left" datetime="2015-12-03">03 Dec 2015</time>
                   </div>
-                  <p class="main-text">All the Lorem Ipsum generators. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+                  <p class="main-text">All the Lorem Ipsum generators. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam All the Lorem Ipsum generators. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
                   <a href="#" class="btn btn-link comment-reply">Reply</a>
                 </div>
               </div>
@@ -276,13 +279,18 @@
             </section>
             <section class="tags">
               <h3 class="sidebar-heading">Tags</h3>
-              <div class="row tags-cloud">
-                <button class="btn tags-btn" type="button">Business</button>
-                <button class="btn tags-btn" type="button">IDEA</button>
-                <button class="btn tags-btn" type="button">Lipsum</button>
-                <button class="btn tags-btn" type="button">Featured props</button>
-                <button class="btn tags-btn" type="button">Blog post</button>
-              </div>
+              <ul class="row tags-cloud">
+                <li class="btn tags-btn"><a href="#">Business</a></li>
+                <li class="btn tags-btn"><a href="#">Idea</a></li>
+                <li class="btn tags-btn"><a href="#">Lipsum</a></li>
+                <li class="btn tags-btn"><a href="#">Featured props</a></li>
+                <li class="btn tags-btn"><a href="#">Blog post</a></li>
+                <li class="btn tags-btn"><a href="#">Lorem</a></li>
+                <li class="btn tags-btn"><a href="#">Ipsum</a></li>
+                <li class="btn tags-btn"><a href="#">Dolor</a></li>
+                <li class="btn tags-btn"><a href="#">Sit</a></li>
+                <li class="btn tags-btn"><a href="#">Amet</a></li>
+              </ul>
             </section>
           </aside>
         </div>
@@ -296,7 +304,7 @@
               <img src="images/logo.svg" alt="Logo">
             </div>
             <div class="flex-col col-md-4">
-              <h5 class="footer-heading">Menu</h5>
+              <h5 class="footer-heading menu-footer-heading">Menu</h5>
               <ul class="text-uppercase footer-nav row">
                 <li class="col-xs-6">
                   <a href="#" class="footer-text">Home</a>
@@ -373,8 +381,8 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

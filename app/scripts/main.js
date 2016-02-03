@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.navbar-toggler').click(function() {
-    $('#main-navbar').toggle(display)
+  $('#menuToggler').click(function() {
+    $('#borderOff').css('padding','0')
   })
-})
+});
