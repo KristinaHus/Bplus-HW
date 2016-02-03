@@ -4,7 +4,7 @@
 .main-head
 .carousel-indicators
   @media (max-width: 543px)
-    bottom: -5px
+    bottom: -19px
   .active
     background: transparent
     border: 3px solid white
@@ -58,6 +58,8 @@
     font-weight: 700
     @media (max-width: 543px)
       font-size: 24px
+    @media (min-width: 544px) and (max-width: 991px)
+      font-size: 36px
   p
     font-weight: 400
     font-family: Raleway, sans-serif
@@ -77,7 +79,7 @@
         width: 100%
         height: auto
   .startup-categories
-    @media (max-width: 543px)
+    @media (max-width: 767px)
       padding: 10% 0
     .media
       margin-bottom: 50px
@@ -276,11 +278,8 @@
       display: flex
       justify-content: center
     img
-      width: 100%
+      width: auto
       height: 276px
-      @media (max-width: 543px)
-        width: auto
-    height: 100%
   .team-footer
     padding-top: 12%
     background: transparent
