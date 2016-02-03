@@ -2,13 +2,13 @@ CRIOS
 
 DEPENDENSES
 
-To make this template work correct, you have to install next libraries and components:
+To make this template work correct, you'll have to install next libraries and components:
  * Bottstrap
- * Flexbox grid
+ * Flexboxgrid
  * jQuery
  * Gulp
 
- QUICK START
+QUICK START
  
 To make this working you can type in your terminal
  <pre>
@@ -18,7 +18,7 @@ To make this working you can type in your terminal
     </code>
  </pre>
  
- And after that you'll have to start server with next commands
+And after that you'll have to start server with next commands
  <pre>
      <code>
          gulp
